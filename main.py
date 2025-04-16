@@ -28,4 +28,11 @@ def make_commits(start_date: str, num_days: int):
     os.system('git push -u origin main')
 
 
-make_commits('00.00.0000', 0)
+def main():
+    """Главная функция для запуска генерации коммитов."""
+
+    make_commits('00.00.0000', 0)
+
+
+if __name__ == '__main__':
+    main()
